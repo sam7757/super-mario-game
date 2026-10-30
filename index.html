@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Super Mario Adventure</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <header class="game-header">
+            <div>
+                <small>LIVES</small>
+                <strong id="lives">♥ ♥ ♥</strong>
+            </div>
+
+            <div>
+                <small>SCORE</small>
+                <strong id="score">000000</strong>
+            </div>
+
+            <div>
+                <small>COINS</small>
+                <strong id="coins">0</strong>
+            </div>
+
+            <div>
+                <small>WORLD</small>
+                <strong id="world">1-1</strong>
+            </div>
+
+            <div>
+                <small>TIME</small>
+                <strong id="time">300</strong>
+            </div>
+        </header>
+
+        <div class="game-area">
+
+            <canvas id="game" width="960" height="540"></canvas>
+
+            <div class="overlay" id="overlay">
+                <div class="menu">
+                    <p class="subtitle">100 LEVELS ADVENTURE</p>
+
+                    <h1 id="overlayTitle">
+                        SUPER MARIO<br>ADVENTURE
+                    </h1>
+
+                    <p id="overlayText">
+                        Collect coins, jump over enemies
+                        and reach the finish flag!
+                    </p>
+
+                    <button id="startBtn">START GAME</button>
+
+                    <p class="instructions">
+                        Move: ← → or A D<br>
+                        Jump: SPACE or ↑<br>
+                        Pause: P
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="game-footer">
+            <span>← → MOVE</span>
+            <span>SPACE JUMP</span>
+            <span>COLLECT COINS</span>
+            <span>COMPLETE 100 LEVELS</span>
+        </footer>
+
+        <div class="mobile-controls">
+            <button id="leftBtn">◀</button>
+            <button id="jumpBtn">JUMP ▲</button>
+            <button id="rightBtn">▶</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
